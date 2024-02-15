@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alpha pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class = "">
+<main class = "min-h-screen bg-[#010313] bg-[url('/images/background.png')] bg-no-repeat bg-top">
+    <!-- home screen -->
+    <section id ='home' class = ' min-h-screen  flex justify-center  text-white '>
+         <div class = ' flex flex-col items-center justify-center gap-4'>
+            <h1 class="text-8xl">ALPHA CLASH PRO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button onclick="play()" class="btn">play now</button>
+         </div>
+    </section>
+<!-- play ground -->
+    <section id="play-ground" class = ' hidden'>
+           <div class = 'flex flex-col items-center gap-12 pt-10'>
+            <div>
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]"> 
+                    <div class ='flex justify-center text-white '>
+                    <p class = ' bg-black px-4 py-2 rounded-b-xl'>dont watch keybord while playing</p>
+                    
+                </div>
+                <div class="flex justify-center items-center h-full">
+                    <p id = 'current' class ='text-9xl uppercase'>Y</p>
+                </div>
+             </div>
+            </div>
+            <!-- keybord -->
+            <div class ='container'>
+             
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id ='a' class="kbd">a</kbd>
+                <kbd id ='s' class="kbd">s</kbd>
+                <kbd id ='d' class="kbd">d</kbd>
+                <kbd id ='f' class="kbd">f</kbd>
+                <kbd id ='g' class="kbd">g</kbd>
+                <kbd id ='h' class="kbd">h</kbd>
+                <kbd id ='j' class="kbd">j</kbd>
+                <kbd id ='k' class="kbd">k</kbd>
+                <kbd id ='l' class="kbd">l</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id ='z' class="kbd">z</kbd>
+                <kbd id ='z' class="kbd">z</kbd>
+                <kbd id ='z' class="kbd">z</kbd>
+                <kbd id ='x' class="kbd">x</kbd>
+                <kbd id ='c' class="kbd">c</kbd>
+                <kbd id ='v' class="kbd">v</kbd>
+                <kbd id ='b' class="kbd">b</kbd>
+                <kbd id ='n' class="kbd">n</kbd>
+                <kbd id ='m' class="kbd">m</kbd>
+                <kbd id ='/' class="kbd">/</kbd>
+              </div>
+            </div>
+                
+               </div>
+               <div>
+                <div class="flex justify-between mx-40 py-8 w-3/4">
+                  <button class="btn rounded-full  px-4">
+                     life
+                     <span>1</span>
+                    </button>
+                    <button    class = "btn btn-secondary">RANDOM</button>
+                    <button  class="btn rounded-full px-4">
+                     score
+                     <span>1</span>
+  
+                    </button>
+                  
+                 </div>
+               </div>
+           </div>
+    </section>
+    <!-- score//////////////// -->
+    <section class = 'score flex justify-center items-center min-h-screen hidden'>
+          <div class ='text-center bg-[#FFFFFF33] rounded-xl '>
+            <div class = 'text-white space-y-6 px-8 py-8'>
+                <h1>SCORE: 14</h1>
+                <button class="btn">
+                   <div><p>Play again</p></div>
+                 </button>
+                <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+          </div>
+    </section>
+</main>
+<script src="utility.js"></script>
+<script src="alfa_clash.js"></script>
+</body>
+</html>
